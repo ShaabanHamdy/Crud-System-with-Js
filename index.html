@@ -1,0 +1,126 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/NewStyle.css" />
+      <title>Crud System</title>
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="crud">
+            <div class="title">
+              <h1>crud system</h1>
+              <p>product mangment system</p>
+            </div>
+            <!-- ======end title================== -->
+            <div class="input w-75 m-auto">
+              <input
+              
+                type="text"
+                class="form-control is-invalid"
+                id="title"
+                placeholder="title"
+              />
+              <div id="titleAlert" class="alert alert-danger text-start p-1 w-50 rounded-5 ms-3 d-none">product name at least three chracters</div>
+
+              <div class="price d-flex mt-1">
+                <input
+               
+                  onkeyup=" getTotal()"
+                  type="number"
+                  class="form-control w-25"
+                  id="price"
+                  placeholder="Price"
+                />
+                <input
+                  onkeyup=" getTotal()"
+                  type="number"
+                  class="form-control w-25"
+                  id="taxes"
+                  placeholder="taxes"
+                />
+                <input
+                  onkeyup=" getTotal()"
+                  type="number"
+                  class="form-control w-25"
+                  id="ads"
+                  placeholder="ads"
+                />
+                <input
+                  onkeyup=" getTotal()"
+                  type="number"
+                  class="form-control w-25"
+                  id="discount"
+                  placeholder="discount"
+                />
+                <small class="total ms-4 btn" id="total"></small>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="count"
+                placeholder="count"
+              />
+              <div id="contAlert" class="alert alert-danger text-start p-1 w-50 rounded-5 ms-3 d-none">can't count more than 100</div>
+
+              
+              <input
+                type="text"
+                class="form-control mt-3 is-invalid"
+                id="category"
+                placeholder="category"
+                
+              />
+              <div id="categoryAlert" class="alert alert-danger text-start p-1 w-50 rounded-5 ms-3 d-none">category at least three chracters</div>
+              <button id="submit" disabled class="btn w-75 mt-2">Add Product</button>
+              <div id="submitAler"><div id="submitAlert" class="alert alert-danger  p-1 w-50 rounded-5 mt-2 d-none">please fill all form</div></div>
+            </div>
+            
+            
+
+            <!-- =========end inputs===================== -->
+            <div id="outputSearch" class="output w-75 m-auto d-none">
+              <div class="searchBlock">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="search"
+                  placeholder="search"
+                />
+                <div class="btnGroub">
+                  <button
+                    class="btn-btn"
+                    id="searchTitle"
+                    onclick="getSearchMoode(this.id)"
+                  >
+                    Search By Title
+                  </button>
+                  <button
+                    class="btn-btn"
+                    id="searchCategory"
+                    onclick="getSearchMoode(this.id)"
+                  >
+                    Search By Category
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="mt-5 w-75 m-auto text-center table text-white">
+            <div id="deletAll" class="w-50 mt-3 m-auto text-center"></div>
+            <thead id="tHead"></thead>
+            <tbody id="tBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/style js.js"></script>
+    </body>
+  </html>
+</html>

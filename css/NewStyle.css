@@ -1,0 +1,96 @@
+* {
+  text-transform: capitalize;
+}
+body {
+  font-family: "cursive";
+  background-color: rgb(19, 64, 79);
+  color: rgb(228, 195, 190);
+  text-transform: uppercase;
+}
+
+.crud {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.crud h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.crud p {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+/* ==========end title==================================== */
+input {
+  color: #fff !important;
+  background-color: transparent !important;
+  margin: 7px;
+  padding: 10px !important;
+  border: 1px solid rgb(251, 179, 167) !important;
+  border-radius: 20px !important;
+  transition: all 1s !important;
+}
+
+small {
+  min-width: fit-content;
+  height: fit-content;
+  margin-top: 7px;
+}
+
+.input button {
+  background-color: #09c !important;
+  font-size: 20px !important;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255) !important;
+  border: 1px transparent solid !important;
+  border-radius: 20px !important;
+  transition: all 1.1s !important;
+}
+.input button:hover {
+  background-color: rgb(13, 85, 109) !important;
+  letter-spacing: 5px !important;
+}
+.btnGroub button:hover {
+  background-color: rgb(13, 85, 109) !important;
+  letter-spacing: 3px !important;
+}
+input:focus {
+  background-color: rgb(19, 50, 60) !important;
+  border: 0px !important;
+  transform: scale(1.1);
+}
+.input button:focus {
+  transform: scale(1.1);
+}
+.btnGroub button:focus {
+  transform: scale(1.1);
+}
+.btnGroub {
+  display: flex;
+  justify-content: space-between;
+}
+.btnGroub button {
+  background-color: #09c;
+  font-size: 20px !important;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255) !important;
+  border: 1px transparent solid !important;
+  border-radius: 20px !important;
+  transition: all 1.1s !important;
+  padding: 7px !important;
+}
+#total {
+  background-color: #0dcaf0;
+  color: #fff;
+  cursor: auto;
+  border: 0px !important;
+}
+#total::before {
+  content: "Total: ";
+}
+#submitAler{
+  display: flex;
+  justify-content: center;
+}
