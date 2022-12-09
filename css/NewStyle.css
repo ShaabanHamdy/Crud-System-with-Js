@@ -94,3 +94,27 @@ input:focus {
   display: flex;
   justify-content: center;
 }
+/* ---------------------------@media screen--------------- */
+@media screen and 
+(min-width: 390px) and 
+(max-width: 900px)
+ {
+  .input{
+    width: 70% !important;
+    /* margin: auto !important; */
+  }
+  .price{
+   display: block !important; 
+   min-width: 500px !important;
+  }
+  small{
+    width: fit-content !important;
+    transform: translateX(-200px);
+  }
+  /* #title{
+    width: 200px !important;
+  } */
+  .alert{
+    min-width: fit-content !important;
+  }
+}
