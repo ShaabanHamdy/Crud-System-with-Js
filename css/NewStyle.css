@@ -2,7 +2,7 @@
   text-transform: capitalize;
 }
 body {
-  font-family: "cursive";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(19, 64, 79);
   color: rgb(228, 195, 190);
   text-transform: uppercase;
