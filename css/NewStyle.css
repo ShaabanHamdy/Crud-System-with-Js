@@ -115,4 +115,7 @@ input:focus {
   .alert{
     min-width: fit-content !important;
   }
+    .container{
+   width: fit-content ;
+  }
 }
