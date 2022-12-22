@@ -101,19 +101,17 @@ input:focus {
  {
   .input{
     width: 70% !important;
-    /* margin: auto !important; */
+   
   }
   .price{
    display: block !important; 
-   min-width: 500px !important;
+   min-width: 700px !important;
   }
   small{
     width: fit-content !important;
-    transform: translateX(-200px);
+    transform: translate(-300px);
   }
-  /* #title{
-    width: 200px !important;
-  } */
+  
   .alert{
     min-width: fit-content !important;
   }
